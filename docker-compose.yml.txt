@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  ingesta1:
+    build: .
+    container_name: ingesta1
+    command: python scripts/ingesta1.py
+  ingesta2:
+    build: .
+    container_name: ingesta2
+    command: python scripts/ingesta2.py
+  ingesta3:
+    build: .
+    container_name: ingesta3
+    command: python scripts/ingesta3.py
